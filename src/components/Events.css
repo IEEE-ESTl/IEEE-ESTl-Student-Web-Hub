@@ -1,3 +1,7 @@
+*
+{
+  font-family: "Cousine", monospace;
+}
 .container {
   display: flex;
   justify-content: center;
