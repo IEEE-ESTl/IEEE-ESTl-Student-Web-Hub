@@ -1,0 +1,107 @@
+.contenedorBienvenida {
+    border: none;
+    overflow: auto;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    font-family: "Cousine", monospace;
+}
+
+.textobienvenida {
+    width: 45%;
+    padding: 35px;
+    padding-top: 13vh;
+    padding-left: 6vw;
+}
+
+.textobienvenida p {
+    padding-left: 3px;
+    text-align: justify;
+}
+
+.imagenesbienvenida {
+    width: 55%;
+}
+
+.imagenesbienvenida {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logotiposBienvenida {
+    clear: both;
+    background-color: transparent;
+}
+
+.divContactar {
+    margin-left: 30px;
+}
+
+
+
+.Contactar1,
+.Contactar2 {
+    font-weight: bolder;
+    letter-spacing: 0.7px;
+    margin-right: 6px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Contactar1 {
+    background-color: var(--azulfuerte);
+    color: white;
+    border: 2px solid var(--azulfuerte);
+}
+
+.Contactar2 {
+    background-color: white;
+    color: var(--azulfuerte);
+    border: 2px solid var(--azulfuerte);
+}
+
+.Contactar1:hover,
+.Contactar2:hover {
+    transform: translateY(-5px);
+}
+
+.imagenesbienvenida img {
+    height: 170px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 9px;
+}
+
+
+.imagenesbienvenida .imgarriba {
+    width: 490px;
+    position: relative;
+}
+
+.imagenesbienvenida .imgabajo {
+    position: relative;
+    width: 230px;
+}
+
+
+
+.logotiposBienvenida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8vh;
+}
+
+.logotiposBienvenida img {
+    height: 44px;
+    margin-left: 22px;
+}

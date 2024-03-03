@@ -1,0 +1,78 @@
+body {
+  background-color: var(--fondo);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.containerInicio {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esferaAzul {
+  z-index: 1;
+  width: 30.5vw;
+  height: 30.5vw;
+  border-radius: 50%;
+  background-image: linear-gradient(to left bottom, var(--azuldebil), var(--azuldebil), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul));
+  animation: vibrateEsfera 3s linear infinite both;
+  box-shadow: 0 0 20px white, 0 0 20px var(--azul);
+}
+
+.esferaAzul.ubicacionEsfera {
+  position: absolute;
+  top: 15vh;
+  right:8vw;
+}
+
+.filtroInicio {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.07), rgba(183, 191, 206, 0.3));
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 0px;
+  z-index: 10;
+  border: 1px solid #827d8a;
+  padding: 6px;
+}
+
+@keyframes vibrateEsfera {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(9px, -9px);
+    background-image: linear-gradient(to left bottom, var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul));
+  }
+
+  40% {
+    transform: translate(9px, 9px);
+    background-image: linear-gradient(to left bottom, var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul));
+  }
+
+  60% {
+    transform: translate(-9px, -9px);
+    background-image: linear-gradient(to left bottom, var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul), var(--azul));
+  }
+
+  80% {
+    transform: translate(-9px, 9px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
