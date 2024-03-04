@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Events from "../components/Events.tsx";
 import Unete from "../components/Unete.astro";
+import Soon from "../components/Soon.astro"
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
+  <>
     <Events client:load />
+    <Soon/>
     <Unete></Unete>
   </main>
 </Layout>

@@ -1,0 +1,125 @@
+---
+import {Image} from 'astro:assets';
+import cw from '../../public/SoonEvents/cw.jpeg'
+import w1 from '../../public/SoonEvents/weekend1.jpeg'
+import w2 from '../../public/SoonEvents/weekend2.jpeg'
+import w3 from '../../public/SoonEvents/weekend3.jpeg'
+import w4 from '../../public/SoonEvents/weekend4.jpeg'
+import w5 from '../../public/SoonEvents/weekend5.jpeg'
+import w6 from '../../public/SoonEvents/weekend6.jpeg'
+import w7 from '../../public/SoonEvents/weekend7.jpeg'
+---
+
+<section class="soon">
+  <div class="dd">
+    <div>
+      <h1 class="titulo">Próximamente</h1>
+      <div class="underline"></div>
+    </div>
+    <div class="bt">
+      <a class="linkss" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSct2Q_Do6s-0msDDiMrhkQ8fgI643QsAvOi89RT6-RGoL6gTQ/viewform">Regístrate</a>
+  </div>
+  </div>
+  <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+  slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+  coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+  <swiper-slide>
+    <Image src={cw} alt="cweekend">
+  </swiper-slide>
+  <swiper-slide>
+    <Image src={w1} alt="weekend1">
+  </swiper-slide>
+  <swiper-slide>
+    <Image src={w2} alt="weekend2">
+  </swiper-slide>
+  <swiper-slide>
+    <Image src={w3} alt="weekend3">
+  </swiper-slide>
+  <swiper-slide>
+    <Image src={w4} alt="weekend4">
+  </swiper-slide>
+  <swiper-slide>
+    <Image src={w5} alt="weekend5">
+  </swiper-slide>
+  <swiper-slide>
+    <Image src={w6} alt="weekend6">
+  </swiper-slide>
+  <swiper-slide>
+    <Image src={w7} alt="weekend7">
+  </swiper-slide>
+</swiper-container>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</section>
+
+<style>
+
+.bt{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.linkss {
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  background: #035b98;
+  border: 2px solid #013d68;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffff;
+  padding-top: 10px;
+}
+.linkss:hover {
+  background-color: #013d68;
+}
+
+.dd{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.soon{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.titulo {
+  color: #035b98;
+  font-size: 90px;
+  font-family: "Cousine", monospace;
+  text-align: left;
+}
+
+.underline {
+  width: 150px;
+  float: left;
+  border: 10px solid #035b98;
+}
+</style>
+<style>
+  swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>
