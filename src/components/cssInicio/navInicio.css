@@ -1,0 +1,68 @@
+.logoIEEE {
+    width: 145px;
+    margin-top: 30px;
+    margin-left: 10px;
+    left: 0;
+    position: absolute;
+}
+
+.menuInicio {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.menuInicio .botonNav {
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.menuInicio .botonNav:hover {
+    transform: translateY(-7px);
+    color: var(--azulfuerte);
+}
+
+.RedesyInicio {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+
+.irInicio {
+    font-weight: bolder;
+    letter-spacing: 0.7px;
+    margin-right: 6px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.irInicio:hover {
+    transform: translateY(-7px);
+    transition: transform 0.2s ease;
+    background-color: var(--azulfuerte);
+    color: white;
+}
+
+.botonNav,
+.irInicio {
+    font-family: "Courier Prime", monospace;
+}
