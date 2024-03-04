@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Events from "../components/Events.tsx";
 import Unete from "../components/Unete.astro";
+import Soon from '../components/Soon.astro'
 import "../components/cssInicio/variables.css";
 import "../components/cssInicio/fondo.css";
 import "../components/cssInicio/navInicio.css";
@@ -9,7 +10,7 @@ import "../components/cssInicio/contenedorBienvenida.css";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
+  <>
     <div class="containerInicio">
       <section class="filtroInicio">
         <div class="menuInicio">
@@ -58,6 +59,7 @@ import "../components/cssInicio/contenedorBienvenida.css";
       <div class="esferaAzul ubicacionEsfera"></div>
     </div>
     <Events client:load />
+    <Soon/>
     <Unete />
   </main>
 </Layout>
