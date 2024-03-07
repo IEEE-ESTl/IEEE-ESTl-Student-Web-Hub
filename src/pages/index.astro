@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Events from "../components/Events.tsx";
 import Unete from "../components/Unete.astro";
+import Footer from "../components/Footer.astro";
 import "../components/cssInicio/variables.css";
 import "../components/cssInicio/fondo.css";
 import "../components/cssInicio/navInicio.css";
@@ -59,5 +60,6 @@ import "../components/cssInicio/contenedorBienvenida.css";
     </div>
     <Events client:load />
     <Unete />
+    <Footer/>
   </main>
 </Layout>
