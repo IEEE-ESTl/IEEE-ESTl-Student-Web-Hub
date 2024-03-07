@@ -1,0 +1,129 @@
+
+.unete
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
+  width: auto;
+}
+
+.titulo {
+  color: #035B98;
+  font-size: 90px;	
+  font-family: "Cousine", monospace;
+  line-height: 1;
+  text-align: right;
+  padding-top: 4rem;
+  padding-bottom: 1rem;	
+  padding-right: 1rem;
+  
+}
+.underline
+{
+  margin-right: 2rem;
+  width: 150px;
+  float: right;
+  border: 10px solid #035B98;
+}
+.beneficios
+{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  padding-top: 30px;
+}
+.alterno
+{
+  color: #000000;
+}
+.list {
+  padding: 3rem;
+  width: 370px;
+  height: auto;
+  padding-left:35%;
+}
+.sub
+{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+      color: #000000;
+}
+.numero
+{
+  font-size: 56px;
+  color: #035B98;
+}
+.tex
+{
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  color: #035B98;
+}
+.desc
+{
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+}
+.botones
+{
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  justify-content: center;
+  gap: 9rem;
+}
+.links
+{
+  width: 200px;
+  height: 30px;
+  text-decoration: none;
+  background: #035B98;
+  border: 2px solid #013d68;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffff;
+  padding-top: 15px;
+}
+  .links:hover
+  {
+      background-color: #013d68;
+  transform: translateY(-5px);
+  transition: 0.4s;
+  }
+
+
+  @media screen and (max-width:800px)
+  {
+    .titulo
+    {
+      text-align: left;
+    }
+    .underline
+    {
+      float: left;
+      position: relative;
+      left: 5%;
+    }
+    .beneficios
+    {      
+      display: flex;
+      flex-direction: column;
+    }
+    .list
+    {
+      position: relative;
+      left: -50%;
+      padding: 0rem;
+      padding-top: 4rem;
+    }
+    .botones
+    {
+      position:relative;
+      left: 13%;
+      gap: 2rem;
+    }
+  }
+  

@@ -1,63 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Events from "../components/Events.tsx";
+import Events from "../components/Events";
 import Unete from "../components/Unete.astro";
 import Footer from "../components/Footer.astro";
-import "../components/cssInicio/variables.css";
-import "../components/cssInicio/fondo.css";
-import "../components/cssInicio/navInicio.css";
-import "../components/cssInicio/contenedorBienvenida.css";
+import Inicio from "../components/Inicio.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <div class="containerInicio">
-      <section class="filtroInicio">
-        <div class="menuInicio">
-          <img src={""} class="logoIEEE" alt="Logo de IEEE" />
-
-          <button class="botonNav">Inicio</button>
-          <button class="botonNav">Eventos</button>
-          <button class="botonNav">Próximamente</button>
-          <button class="botonNav">Únete</button>
-          <button class="botonNav">FAQ</button>
-          <div class="RedesyInicio">
-            <button class="botonNav">Redes</button>
-            <button class="irInicio">Inicio</button>
-          </div>
-        </div>
-
-        <div class="contenedorBienvenida">
-          <div class="textobienvenida">
-            <h1>Save time by building fast with Boldo</h1>
-            <p>
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-              archivos de texto. Lorem Ipsum ha sido el texto de relleno
-              estándar de las
-            </p>
-            <div class="divContactar">
-              <button class="Contactar1">Contactar</button>
-              <button class="Contactar2">Contactar</button>
-            </div>
-          </div>
-          <div class="imagenesbienvenida">
-            <img class="imgarriba" src="./imagenes/1.png" />
-            <div>
-              <img class="imgabajo" src="./imagenes/2.png" />
-              <img class="imgabajo" src="./imagenes/3.jpg" />
-            </div>
-          </div>
-        </div>
-        <div class="logotiposBienvenida">
-          <img src="./imagenes/csociety_logo.png" />
-          <img src="./imagenes/uaeh_logo_color.png" />
-          <img src="./imagenes/logoESTL.png" />
-          <img src="./imagenes/ieeelogo2.png" />
-        </div>
-      </section>
-
-      <div class="esferaAzul ubicacionEsfera"></div>
-    </div>
+<Layout title="Welcome to StudentWebHub">
+    <Inicio />
     <Events client:load />
     <Unete />
     <Footer/>
