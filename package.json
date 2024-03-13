@@ -15,6 +15,7 @@
     "@types/react": "^18.2.59",
     "@types/react-dom": "^18.2.19",
     "astro": "^4.4.1",
+    "dependence": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swiper": "^11.0.6",
