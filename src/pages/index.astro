@@ -2,6 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import Events from "../components/Events";
 import Unete from "../components/Unete.astro";
+import Soon from '../components/Soon.astro'
+import "../components/cssInicio/variables.css";
+import "../components/cssInicio/fondo.css";
+import "../components/cssInicio/navInicio.css";
+import "../components/cssInicio/contenedorBienvenida.css";
 import Footer from "../components/Footer.astro";
 import Inicio from "../components/Inicio.astro";
 ---
@@ -9,6 +14,7 @@ import Inicio from "../components/Inicio.astro";
 <Layout title="Welcome to StudentWebHub">
     <Inicio />
     <Events client:load />
+    <Soon/>
     <Unete />
     <Footer/>
   </main>
