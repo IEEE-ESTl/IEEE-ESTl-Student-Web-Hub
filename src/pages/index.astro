@@ -9,13 +9,25 @@ import "../components/cssInicio/navInicio.css";
 import "../components/cssInicio/contenedorBienvenida.css";
 import Footer from "../components/Footer.astro";
 import Inicio from "../components/Inicio.astro";
+import Titulos from "../components/Titulos.astro";
 ---
 
 <Layout title="Welcome to StudentWebHub">
     <Inicio />
-    <Events client:load />
-    <Soon/>
+    <Titulos
+      titulo="Evéntos"
+    />
+    <Events />
+    <Titulos 
+      titulo="Próximo"  
+    />
+    <Soon />
+    <Titulos 
+     titulo="Únete" 
+    />
     <Unete />
+    <Titulos 
+      titulo="FAQ"  
+    />
     <Footer/>
-  </main>
 </Layout>

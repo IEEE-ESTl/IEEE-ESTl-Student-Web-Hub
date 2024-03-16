@@ -11,7 +11,11 @@
     border-radius: 1.5em;
     margin: auto;
 }
-
+.separacion
+{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
 a{
     text-decoration: underline;
 }

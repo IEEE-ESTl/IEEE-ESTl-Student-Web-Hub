@@ -7,14 +7,16 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  gap: 70px;
+  gap: 70px;  
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .events {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 .events h2 {

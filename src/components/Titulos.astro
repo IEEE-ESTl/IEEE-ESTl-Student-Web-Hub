@@ -1,0 +1,45 @@
+---
+interface Props {
+	titulo: string;
+}
+const { titulo } = Astro.props
+---
+<section>
+    <h1 class="titulo">{titulo}</h1>
+    <div class="underline"></div>
+</section>
+
+<style>
+    .titulo {
+        color: #035B98;
+        font-size: 90px;	
+        font-family: "Cousine", monospace;
+        line-height: 1;
+        text-align: right;
+        padding-top: 4rem;
+        padding-bottom: 1rem;	
+        padding-right: 1rem;
+  
+    }
+    .underline
+    {
+        margin-right: 2rem;
+        width: 150px;
+        float: right;
+        border: 10px solid #035B98;
+    }
+
+    @media screen and (max-width:800px)
+    {
+    .titulo
+        {
+            text-align: left;
+        }
+    .underline
+        {
+            float: left;
+            position: relative;
+            left: 5%;
+        }
+    }
+</style>

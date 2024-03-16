@@ -36,7 +36,7 @@ import "swiper/css/scrollbar";
 export default function App() {
   return (
     <>
-      <div className="container">
+      <div className="container" id="Eventos">
         <div className="events">
           <h2 className="gray">Conferecias</h2>
           <h2>Tallereres</h2>

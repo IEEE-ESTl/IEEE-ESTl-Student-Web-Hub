@@ -6,29 +6,12 @@
   height: auto;
   width: auto;
 }
-
-.titulo {
-  color: #035B98;
-  font-size: 90px;	
-  font-family: "Cousine", monospace;
-  line-height: 1;
-  text-align: right;
-  padding-top: 4rem;
-  padding-bottom: 1rem;	
-  padding-right: 1rem;
-  
-}
-.underline
-{
-  margin-right: 2rem;
-  width: 150px;
-  float: right;
-  border: 10px solid #035B98;
-}
 .beneficios
 {
-  display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 30px;
 }
 .alterno
@@ -37,9 +20,8 @@
 }
 .list {
   padding: 3rem;
-  width: 370px;
+  width: 400px;
   height: auto;
-  padding-left:35%;
 }
 .sub
 {
@@ -71,7 +53,7 @@
 {
   display: flex;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   justify-content: center;
   gap: 9rem;
 }
@@ -97,32 +79,9 @@
 
   @media screen and (max-width:800px)
   {
-    .titulo
-    {
-      text-align: left;
-    }
-    .underline
-    {
-      float: left;
-      position: relative;
-      left: 5%;
-    }
-    .beneficios
-    {      
-      display: flex;
-      flex-direction: column;
-    }
-    .list
-    {
-      position: relative;
-      left: -50%;
-      padding: 0rem;
-      padding-top: 4rem;
-    }
     .botones
     {
       position:relative;
-      left: 13%;
       gap: 2rem;
     }
   }

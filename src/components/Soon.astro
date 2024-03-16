@@ -10,16 +10,8 @@ import w6 from '../../public/SoonEvents/weekend6.jpeg'
 import w7 from '../../public/SoonEvents/weekend7.jpeg'
 ---
 
-<section class="soon">
-  <div class="dd">
-    <div>
-      <h1 class="titulo">Próximamente</h1>
-      <div class="underline"></div>
-    </div>
-    <div class="bt">
-      <a class="linkss" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSct2Q_Do6s-0msDDiMrhkQ8fgI643QsAvOi89RT6-RGoL6gTQ/viewform">Regístrate</a>
-  </div>
-  </div>
+<section class="soon" id="Soon">
+    
   <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
   slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
   coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
@@ -75,46 +67,27 @@ import w7 from '../../public/SoonEvents/weekend7.jpeg'
   background-color: #013d68;
 }
 
-.dd{
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
 .soon{
     width: 100%;
     height: auto;
     background-size: cover;
+    padding-top: 3rem;
 }
 
-.titulo {
-  color: #035b98;
-  font-size: 90px;
-  font-family: "Cousine", monospace;
-  text-align: left;
-}
-
-.underline {
-  width: 150px;
-  float: left;
-  border: 10px solid #035b98;
-}
 </style>
 <style>
   swiper-container {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 500px;
+    width: 400px;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
   swiper-slide img {
