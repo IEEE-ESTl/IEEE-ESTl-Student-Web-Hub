@@ -1,0 +1,131 @@
+* {
+  font-family: "Cousine", monospace;
+}
+
+.eventName {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 16px;
+}
+
+.eventDescription {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 0 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 70px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+.swiper {
+  width: 340px;
+  height: 420px;
+  padding: 0% !important;
+  margin: 0% !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #fff;
+}
+
+.swiper-slide h1 {
+  font-size: 22px;
+}
+
+.swiper-slide p {
+  font-size: 18px;
+}
+
+.swiper-slide {
+  background-color: #00629b;
+}
+
+.events {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 16px;
+}
+
+.span-events {
+  color: rgb(75, 75, 75);
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+}
+
+.span-events::before {
+  animation-name: var(--animation, a);
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+  content: attr(data-content);
+  background: #00629b;
+  position: absolute;
+  inset: 0;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  opacity: 1;
+}
+
+@keyframes a {
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}
+
+@keyframes a2 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+
+  16.667%,
+  66.667% {
+    opacity: 0;
+  }
+}
+
+@keyframes a3 {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}
