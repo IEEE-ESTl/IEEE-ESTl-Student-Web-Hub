@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Events from "../components/Events";
+import Events from "@components/Events";
 import Unete from "../components/Unete.astro";
-import Soon from '../components/Soon.astro'
+import Soon from "../components/Soon.astro";
 import "../components/cssInicio/variables.css";
 import "../components/cssInicio/fondo.css";
 import "../components/cssInicio/navInicio.css";
@@ -13,21 +13,13 @@ import Titulos from "../components/Titulos.astro";
 ---
 
 <Layout title="Welcome to StudentWebHub">
-    <Inicio />
-    <Titulos
-      titulo="Evéntos"
-    />
-    <Events />
-    <Titulos 
-      titulo="Próximo"  
-    />
-    <Soon />
-    <Titulos 
-     titulo="Únete" 
-    />
-    <Unete />
-    <Titulos 
-      titulo="FAQ"  
-    />
-    <Footer/>
+  <Inicio />
+  <Titulos titulo="Evéntos" />
+  <Events client:load />
+  <Titulos titulo="Próximo" />
+  <Soon />
+  <Titulos titulo="Únete" />
+  <Unete />
+  <Titulos titulo="FAQ" />
+  <Footer />
 </Layout>
