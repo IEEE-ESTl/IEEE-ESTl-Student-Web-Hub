@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Events from "@components/Events";
 import Unete from "../components/Unete.astro";
-import Soon from "../components/Soon.astro";
+import Soon from "../components/Soon";
 import "../components/cssInicio/variables.css";
 import "../components/cssInicio/fondo.css";
 import "../components/cssInicio/navInicio.css";
@@ -17,7 +17,7 @@ import Titulos from "../components/Titulos.astro";
   <Titulos titulo="Evéntos" />
   <Events client:load />
   <Titulos titulo="Próximo" />
-  <Soon />
+  <Soon client:load />
   <Titulos titulo="Únete" />
   <Unete />
   <Titulos titulo="FAQ" />
