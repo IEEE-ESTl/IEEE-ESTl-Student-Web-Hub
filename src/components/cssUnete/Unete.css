@@ -52,10 +52,10 @@
 .botones
 {
   display: flex;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
+
+
   justify-content: center;
-  gap: 9rem;
+
 }
 .links
 {
@@ -67,7 +67,22 @@
   border-radius: 10px;
   text-align: center;
   color: #ffff;
-  padding-top: 15px;
+  padding: 8px;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.4s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+
 }
   .links:hover
   {
