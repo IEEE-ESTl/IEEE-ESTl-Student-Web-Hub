@@ -20,11 +20,6 @@ const card: Card[] = [
     name: "Welcome Back",
     description: "",
   },
-  {
-    src: WelcomeBack.src,
-    name: "Welcome Back",
-    description: "",
-  },
 ];
 
 import "./cssEvents/Events.css";
