@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Events from "@components/Events";
+import Header from "@components/Header.astro";
 import Unete from "../components/Unete.astro";
 import Soon from "../components/Soon";
 import "../components/cssInicio/variables.css";
@@ -13,13 +14,39 @@ import Titulos from "../components/Titulos.astro";
 ---
 
 <Layout title="Welcome to StudentWebHub">
+  <Header />
   <Inicio />
   <Titulos titulo="Evéntos" />
+
+  <h2>
+    Nos esforzamos por ofrecer una amplia gama de actividades diseñadas para
+    enriquecer la experiencia educativa de nuestros miembros, así como para
+    fomentar el crecimiento profesional y personal. Desde conferencias técnicas
+    hasta talleres prácticos, pasando por competiciones emocionantes y
+    actividades sociales, hay algo para todos en nuestra comunidad.
+  </h2>
+
   <Events client:load />
   <Titulos titulo="Próximo" />
+
+  <h2>
+    ¡Prepárate para sumergirte en una serie emocionante de eventos que están a
+    punto de llegar a la Rama Estudiantil IEEE - ESTl! Aquí hay un vistazo a lo
+    que te espera en el futuro cercano.
+  </h2>
+
   <Soon client:load />
   <Titulos titulo="Únete" />
   <Unete />
   <Titulos titulo="FAQ" />
   <Footer />
 </Layout>
+
+<style>
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 2rem;
+  }
+</style>
