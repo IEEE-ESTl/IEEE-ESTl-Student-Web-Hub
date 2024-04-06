@@ -1,79 +1,47 @@
 ---
-import "./cssFooter/footer.css"
+import "./cssFooter/footer.css";
+
+const FAQ = [
+  {
+    question: "¿Qué es el IEEE?",
+    answer:
+      "IEEE significa 'Institute of Electrical and Electronics Engineers' (Instituto de Ingenieros Eléctricos y Electrónicos), es una organización profesional internacional dedicada al avance de la tecnología en diversas áreas, como la ingeniería eléctrica, la electrónica, las telecomunicaciones, la informática y áreas relacionadas. Nuestra rama es una subdivisión local de esta organización.",
+  },
+  {
+    question:
+      "¿Qué es la rama estudiantil IEEE - UAEH Escuela Superior de Tlahuelilpan?",
+    answer:
+      "Permite a los estudiantes de la universidad participar en actividades y eventos relacionados con la tecnología, la ingeniería y la ciencia. Además, la rama estudiantil de IEEE en nuestra universidad ofrece oportunidades para que los estudiantes se conecten con profesionales de la industria y otros estudiantes de todo el mundo.",
+  },
+  {
+    question: "¿Cuáles son los beneficios de pertenecer a la rama estudiantil?",
+    answer:
+      "Participar en actividades del instituto. Descuentos exclusivos para miembros. Formar parte del comité de la rama estudiantil. Correo electrónico con dominio del ieee.org",
+  },
+  {
+    question:
+      "¿Qué tipo de actividades se realizan dentro de la rama estudiantil?",
+    answer:
+      "¡Talleres, conferencias, eventos y más! dentro de este sitio web te puedes enterar de las actividades que se realizan.",
+  },
+];
 ---
+
 <section class="separacion">
-<div class="container-header" id="Faq">
-  <h2 class="header-footer">Preguntas frecuentes</h2>
-</div>
-<hr />
-<section class="footer-container">
-  <details class="styled">
-    <summary>¿Qué es IEEE?</summary>
-    <div>
-      <p>
-        IEEE, que significa "Institute of Electrical and Electronics Engineers"
-        (Instituto de Ingenieros Eléctricos y Electrónicos), es una organización
-        profesional internacional dedicada al avance de la tecnología en
-        diversas áreas, como la ingeniería eléctrica, la electrónica, las
-        telecomunicaciones, la informática y áreas relacionadas. La rama
-        estudiantil de IEEE en nuestra universidad es una subdivisión local de
-        esta organización, compuesta por estudiantes interesados en estas
-        disciplinas.
-      </p>
-    </div>
-  </details>
-
-  <details class="styled">
-    <summary
-      >¿Qué hace la rama estudiantil de IEEE en nuestra universidad?</summary
-    >
-    <div>
-      <p>
-        Permite traer diferentes tipos de actividades dentro de la universidad,
-        así como oportunidades de crecer dentro del áre de investigación. Así
-        mismo te da beneficios pertenecer a la rama estudiantil dando peso
-        curricular.
-      </p>
-    </div>
-  </details>
-
-  <details class="styled">
-    <summary>¿Cuáles son los beneficios de unirse a IEEE?</summary>
-    <div>
-      <p>
-        <ul>
-          <li>Participar en actividades dentro del instituto.</li>
-          <li>Descuentos para los eventos creados por el IEEE.</li>
-          <li>Newsletter con noticias dentro del área.</li>
-          <li>Correo con dominio del instituto.</li>
-          <li>
-            Reconocimiento y publicaciones dentro de la revista del instituto.
-          </li>
-        </ul>
-      </p>
-    </div>
-  </details>
-
-  <details class="styled">
-    <summary
-      >¿Qué tipo de actividades realiza la rama estudiantil de IEEE?</summary
-    >
-    <div>
-      <p>¡Talleres, conferencias, eventos y más!</p>
-    </div>
-  </details>
-
-  <details class="styled">
-    <summary
-      >¿Cómo puedo participar en eventos y conferencias organizados por IEEE?
-    </summary>
-    <div>
-      <p>
-        Dentro de este sitio web te puedes enterar de los eventos y conferencias
-        antes que nadie.No olvides seguirnos en nuestras redes sociales donde se
-        dan detalles y fechas sobre cualquier evento
-      </p>
-    </div>
-  </details>
-</section>
+  <div class="container-header" id="Faq">
+    <h2 class="header-footer">Preguntas frecuentes</h2>
+  </div>
+  <hr />
+  <section class="footer-container">
+    {
+      FAQ.map((faq) => (
+        <details class="styled">
+          <summary> {faq.question}</summary>
+          <div>
+            <p>{faq.answer}</p>
+          </div>
+        </details>
+      ))
+    }
+  </section>
 </section>
