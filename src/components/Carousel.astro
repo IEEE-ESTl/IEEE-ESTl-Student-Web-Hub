@@ -1,0 +1,96 @@
+---
+import "./cssInicio/contenedorBienvenida.css";
+import "./cssInicio/fondo.css";
+import "./cssInicio/navInicio.css";
+import "./cssInicio/variables.css";
+
+import branchLogo from "/public/Inicio/ieeelogo1.png";
+
+import ieeeLogo from "/public/Inicio/ieeelogo2.png";
+import csocietyLogo from "/public/Inicio/csociety_logo.png";
+import uaehLogo from "/public/Inicio/uaeh_logo_color.png";
+import estlLogo from "/public/Inicio/logoESTL.png";
+
+const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
+---
+
+<div>
+    <section>
+        <article>
+            <div>
+                <ul>
+                    {
+                        Logos.map((logo, index) => (
+                            <li>
+                                <img src={logo.src} />
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    {
+                        Logos.map((logo, index) => (
+                            <li>
+                                <img src={logo.src} />
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+        </article>
+    </section>
+</div>
+
+<style>
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    article {
+        display: flex;
+        width: 200%;
+        margin-top: 60px;
+        animation: carouselMove 50s linear infinite;
+    }
+
+    article.paused {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    li {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    @keyframes carouselMove {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+</style>
