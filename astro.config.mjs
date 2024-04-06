@@ -8,5 +8,3 @@ export default defineConfig({
   site: 'https://IEEE-ESTl.github.io',
   base: '/IEEE-ESTl-Student-Web-Hub',
 });
-
-import { defineConfig } from "astro/config";
