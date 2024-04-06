@@ -18,9 +18,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+
   gap: 70px;
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 3rem;
 }
 

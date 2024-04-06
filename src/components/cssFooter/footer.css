@@ -16,12 +16,25 @@
     padding-top: 5rem;
     padding-bottom: 4rem;
 }
-a{
+
+a {
     text-decoration: underline;
 }
 
+
 details > summary {
     list-style-type: '⮕';
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+details > p {
+    font-size: 1.1em;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 details[open] > summary {

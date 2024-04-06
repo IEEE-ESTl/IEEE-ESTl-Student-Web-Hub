@@ -1,7 +1,5 @@
 .logoIEEE {
     width: 145px;
-    margin-top: 30px;
-    margin-left: 10px;
     left: 0;
     position: absolute;
 }
@@ -13,10 +11,21 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    position: absolute;
+    position: sticky;
     top: 0;
     height: 100px;
     width: 100%;
+
+    z-index: 1000;
+
+    background-color: white;
+
+    & a {
+        text-decoration: none;
+        color: black;
+
+        font-size: 20px;
+    }
 }
 
 .menuInicio .botonNav {
@@ -32,13 +41,33 @@
 
 .menuInicio .botonNav:hover {
     transform: translateY(-7px);
-    color: var(--azulfuerte);
 }
 
-.RedesyInicio {
+.Redes-Inicio {
     position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     right: 0;
     margin-right: 50px;
+
+    & a {
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: black;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: translateY(-7px);
+        }
+    }
 }
 
 
@@ -58,8 +87,6 @@
 .irInicio:hover {
     transform: translateY(-7px);
     transition: transform 0.2s ease;
-    background-color: var(--azulfuerte);
-    color: white;
 }
 
 .botonNav,
