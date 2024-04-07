@@ -11,6 +11,9 @@ import imageMosaic3 from "/public/Inicio/3.jpg";
 import config from "../../config.json";
 
 import Carousel from "./Carousel.astro";
+
+import "@fontsource/open-sauce-sans/400.css";
+import "@fontsource/open-sauce-sans/600.css";
 ---
 
 <section id="Inicio">
@@ -18,14 +21,22 @@ import Carousel from "./Carousel.astro";
     <section class="filtroInicio">
       <div class="contenedorBienvenida">
         <div class="textobienvenida">
-          <h1>{config.branchName}</h1>
-          <p>
+          <h1
+            style="font-family: 'Open Sauce Sans', sans-serif; font-weight: 600;"
+          >
+            {config.branchName}
+          </h1>
+          <p
+            style="font-family: 'Open Sauce Sans', sans-serif; font-weight: 500; font-size: .5em;"
+          >
             {" "}
             {config.branchDescription}{" "}
           </p>
           <div class="divContactar">
             <button class="Contactar1">Contactar</button>
-            <button class="Contactar2">Eventos</button>
+            <button class="Contactar2" onclick="location.href='#Eventos'"
+              >Eventos</button
+            >
           </div>
         </div>
         <div class="imagenesbienvenida">
@@ -38,7 +49,5 @@ import Carousel from "./Carousel.astro";
       </div>
       <Carousel />
     </section>
-
-    <div class="esferaAzul ubicacionEsfera"></div>
   </div>
 </section>

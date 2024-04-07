@@ -8,7 +8,6 @@
 .contenedorBienvenida {
   display: flex;
   flex-direction: row;
-  font-family: "Cousine", monospace;
 }
 
 @media (max-width: 1030px) {
@@ -37,7 +36,6 @@ h1 {
   margin-bottom: 10px;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-family: "Cousine", monospace;
   font-weight: 400;
   letter-spacing: 0.5px;
   color: black;
@@ -58,7 +56,6 @@ h1 {
     margin-bottom: 10px;
     font-size: 1.2rem;
     line-height: 1.5;
-    font-family: "Cousine", monospace;
     font-weight: 300;
     letter-spacing: 0.5px;
     color: black;
@@ -79,7 +76,7 @@ h1 {
     padding: 0px;
     padding-left: 4px;
     padding-right: 4px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .textobienvenida p {
