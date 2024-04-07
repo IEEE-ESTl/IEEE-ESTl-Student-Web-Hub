@@ -62,9 +62,23 @@ img {
   margin: 0 0 16px;
 }
 
+@media (max-width: 1030px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+ 
+
+  .events {
+    display: none;
+  }
+
+}
+
 .span-events {
   color: rgb(75, 75, 75);
-  font-size: 2.8rem;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
@@ -88,6 +102,7 @@ img {
 }
 
 @keyframes a {
+
   0%,
   16.667%,
   100% {
@@ -101,6 +116,7 @@ img {
 }
 
 @keyframes a2 {
+
   0%,
   100% {
     opacity: 0;
@@ -118,6 +134,7 @@ img {
 }
 
 @keyframes a3 {
+
   0%,
   50%,
   100% {

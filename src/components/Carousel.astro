@@ -85,6 +85,17 @@ const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
         width: 300px;
     }
 
+    @media (max-width: 1030px) {
+        article {
+            animation: carouselMove 30s linear infinite;
+            margin-top: 50px;
+
+            & img {
+                width: 200px;
+            }
+        }
+    }
+
     @keyframes carouselMove {
         0% {
             transform: translateX(0);

@@ -21,9 +21,7 @@ import Titulos from "../components/Titulos.astro";
   <h2>
     Nos esforzamos por ofrecer una amplia gama de actividades diseñadas para
     enriquecer la experiencia educativa de nuestros miembros, así como para
-    fomentar el crecimiento profesional y personal. Desde conferencias técnicas
-    hasta talleres prácticos, pasando por competiciones emocionantes y
-    actividades sociales, hay algo para todos en nuestra comunidad.
+    fomentar el crecimiento profesional y personal.
   </h2>
 
   <Events client:load />
@@ -36,30 +34,55 @@ import Titulos from "../components/Titulos.astro";
   </h2>
 
   <Soon client:load />
-  <Titulos titulo="Únete" />
 
-  <h2>
-    Al unirte a la Rama, te embarcarás en un viaje emocionante lleno de
-    oportunidades y beneficios que enriquecerán tu experiencia académica y
-    profesional. Aquí están algunos de los increíbles beneficios que ofrecemos a
-    nuestros miembros:
-  </h2>
-  <Unete />
-  <Titulos titulo="FAQ" />
+  <div class="unete">
+    <Titulos titulo="Únete" />
 
-  <h2>
-    ¿Tienes alguna pregunta sobre la Rama Estudiantil IEEE - ESTl? Consulta
-    nuestras preguntas frecuentes para obtener respuestas a algunas de las
-    preguntas más comunes que recibimos.
-    
-  <Footer />
+    <h2>
+      Al unirte a la Rama, te embarcarás en un viaje emocionante lleno de
+      oportunidades y beneficios que enriquecerán tu experiencia académica y
+      profesional. Aquí están algunos de los increíbles beneficios que ofrecemos
+      a nuestros miembros:
+    </h2>
+    <Unete />
+  </div>
+
+  <div class="faq">
+    <Titulos titulo="FAQ" />
+
+    <h2>
+      ¿Tienes alguna pregunta sobre la Rama Estudiantil IEEE - ESTl? Consulta
+      nuestras preguntas frecuentes para obtener respuestas a algunas de las
+      preguntas más comunes que recibimos.
+
+      <Footer />
+    </h2>
+  </div>
+
+  <style>
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      text-align: center;
+      padding: 2rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 1155px) {
+      .faq {
+        display: none;
+      }
+
+      .unete {
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
 </Layout>
-
-<style>
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    padding: 2rem;
-  }
-</style>
