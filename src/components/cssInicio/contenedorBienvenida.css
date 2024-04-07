@@ -4,11 +4,18 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+
 .contenedorBienvenida {
-  margin-top: 15vh;
   display: flex;
   flex-direction: row;
   font-family: "Cousine", monospace;
+}
+
+@media (max-width: 1030px) {
+  .contenedorBienvenida {
+    flex-direction: column;
+    margin-top: 4vh;
+  }
 }
 
 h1 {
@@ -18,10 +25,9 @@ h1 {
 .textobienvenida {
   width: 45%;
   padding: 35px;
-  padding-top: 13vh;
   padding-left: 6vw;
-  color: black;
-  font-size: 1.9rem;
+  color: #0371A4;
+  font-size: 3rem;
 }
 
 .textobienvenida p {
@@ -29,21 +35,58 @@ h1 {
   text-align: justify;
   color: black;
   margin-bottom: 10px;
-
   font-size: 1.2rem;
-
   line-height: 1.5;
-
   font-family: "Cousine", monospace;
-
   font-weight: 400;
-
   letter-spacing: 0.5px;
-
   color: black;
+  font-size: 1.2rem;
+}
 
-  
 
+@media (max-width: 1330px) {
+  .textobienvenida {
+    width: auto;
+    font-size: 2.4rem;
+  }
+
+  .textobienvenida p {
+    padding-left: 3px;
+    text-align: justify;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: "Cousine", monospace;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: black;
+    font-size: 1rem;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .textobienvenida {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 668px) {
+
+  .textobienvenida {
+    padding: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 1.5rem;
+  }
+
+  .textobienvenida p {
+    font-size: .8rem;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }
 
 .imagenesbienvenida {
@@ -58,13 +101,19 @@ h1 {
   align-items: center;
 }
 
+@media (max-width: 1030px) {
+  .imagenesbienvenida {
+    display: none;
+  }
+}
+
 .logotiposBienvenida {
-  
   background-color: transparent;
 }
 
 .divContactar {
   margin-left: 30px;
+  margin-top: 20px;
 }
 
 .Contactar1,
@@ -80,6 +129,16 @@ h1 {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 1.2rem;
+}
+
+@media (max-width: 1030px) {
+
+  .Contactar1,
+  .Contactar2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .9rem;
+  }
 }
 
 .Contactar1 {
@@ -130,6 +189,7 @@ h1 {
 
   margin-left: 22px;
 }
+
 a {
   text-decoration: none;
   color: black;

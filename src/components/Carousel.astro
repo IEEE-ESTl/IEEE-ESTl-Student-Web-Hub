@@ -57,7 +57,7 @@ const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
     article {
         display: flex;
         width: 200%;
-        margin-top: 60px;
+        margin-top: 100px;
         animation: carouselMove 50s linear infinite;
     }
 
@@ -83,6 +83,17 @@ const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
 
     img {
         width: 300px;
+    }
+
+    @media (max-width: 1030px) {
+        article {
+            animation: carouselMove 30s linear infinite;
+            margin-top: 50px;
+
+            & img {
+                width: 200px;
+            }
+        }
     }
 
     @keyframes carouselMove {

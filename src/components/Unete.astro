@@ -1,32 +1,51 @@
 ---
 import "./cssUnete/Unete.css"
+
+import welcome from "/public/Inicio/undraw_welcome_cats_thqn.svg"
 ---
 
 <section class="unete">
 <div class="beneficios">
   <div class="list">
-    <h2 class="sub"><span class="tex"><span class="numero">1</span><span class="alterno">  Potencia</span> 
-      <h3 class="tex">tus habilidades</h3>
-    <p class="desc"> Uniendote al comité podrás desarrollar tus habilidades</p>
+    <h2 class="sub"><span class="tex"><span class="numero">1 {" "} </span><span class="alterno">Mejora</span> 
+      <h3 class="tex">tu carrera </h3>
+    <p class="desc">Estableciendo contactos con expertos técnicos</p>
   </div>
+
   <div class="list">
-    <h2 class="sub"> Potencia <span class="tex"><span class="numero">2</span>
-      <h3 class="tex">tus habilidades</h3>
-    <p class="desc"> Uniendote al comité podrás desarrollar tus habilidades</p>
-  </div>
+    <h2 class="sub"><span class="tex"><span class="numero">2 {" "} </span><span class="alterno">Aprende</span> 
+      <h3 class="tex">de los mejores </h3>
+    <p class="desc">Conferencias y talleres de expertos en el área</p>
+
+    </div>
+
   <div class="list">
-    <h2 class="sub"><span class="tex"><span class="numero">3</span><span class="alterno"> Potencia</span> 
-      <h3 class="tex">tus habilidades</h3>
-    <p class="desc"> Uniendote al comité podrás desarrollar tus habilidades</p>
-  </div>
-  <div class="list">
-    <h2 class="sub">Potencia <span class="tex"><span class="numero">4</span>
-      <h3 class="tex">tus habilidades</h3>
-    <p class="desc"> Uniendote al comité podrás desarrollar tus habilidades</p>
-  </div>
+    <h2 class="sub"><span class="tex"><span class="numero">3 {" "} </span><span class="alterno">Conoce</span> 
+      <h3 class="tex">a tu comunidad </h3>
+    <p class="desc">Conoce a otros estudiantes y profesionales de tu área</p>
+
+    </div>
 </div>
 <div class="botones">
+
+  <img class="welcome " src={welcome.src} alt="welcome" />
+
   <a class="links" href="">Unirse</a>
-  <a class="links" href="\-">Saber más</a>
+
 </div>
 </section>
+
+
+<style>
+  .botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .welcome {
+    width: 300px;
+  }
+
+  </style>

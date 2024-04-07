@@ -12,6 +12,17 @@
   height: 500px;
 }
 
+@media (max-width: 1030px) {
+  .swiper.mySwiper1 {
+    height: 400px;
+  }
+
+  .swiper.mySwiper1 .swiper-slide {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .swiper.mySwiper1 .swiper-slide img {
   display: block;
   width: 100%;

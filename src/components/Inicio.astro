@@ -4,16 +4,11 @@ import "./cssInicio/fondo.css";
 import "./cssInicio/navInicio.css";
 import "./cssInicio/variables.css";
 
-import branchLogo from "/public/Inicio/ieeelogo1.png";
-
 import imageMosaic from "/public/Inicio/1.png";
 import imageMosaic2 from "/public/Inicio/2.png";
 import imageMosaic3 from "/public/Inicio/3.jpg";
 
 import config from "../../config.json";
-
-import InstagramIcon from "./icons/Instagram.astro";
-import LinkedInIcon from "./icons/LinkedIn.astro";
 
 import Carousel from "./Carousel.astro";
 ---
@@ -23,7 +18,7 @@ import Carousel from "./Carousel.astro";
     <section class="filtroInicio">
       <div class="contenedorBienvenida">
         <div class="textobienvenida">
-          <h1>{"Bienvenido a " + config.branchName}</h1>
+          <h1>{config.branchName}</h1>
           <p>
             {" "}
             {config.branchDescription}{" "}

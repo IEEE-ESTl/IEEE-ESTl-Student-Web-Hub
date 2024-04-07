@@ -6,26 +6,25 @@ import "./cssInicio/variables.css";
 
 import branchLogo from "/public/Inicio/ieeelogo1.png";
 
-import imageMosaic from "/public/Inicio/1.png";
-import imageMosaic2 from "/public/Inicio/2.png";
-import imageMosaic3 from "/public/Inicio/3.jpg";
-
 import config from "../../config.json";
 
 import InstagramIcon from "./icons/Instagram.astro";
 import LinkedInIcon from "./icons/LinkedIn.astro";
 
-import Carousel from "./Carousel.astro";
+import GitHubIcon from "./icons/GitHub.astro";
 ---
 
 <div class="menuInicio">
     <img src={branchLogo.src} class="logoIEEE" alt="Logo de IEEE" />
 
-    <button class="botonNav"><a href="#Inicio">Inicio</a></button>
-    <button class="botonNav"><a href="#Eventos">Eventos</a></button>
-    <button class="botonNav"><a href="#Soon">Próximamente</a></button>
-    <button class="botonNav"><a href="#Unete">Únete</a></button>
-    <button class="botonNav"><a href="#Faq">FAQ</a></button>
+    <div class="navInicio">
+      <button class="botonNav"><a href="#Inicio">Inicio</a></button>
+      <button class="botonNav"><a href="#Eventos">Eventos</a></button>
+      <button class="botonNav"><a href="#Soon">Próximamente</a></button>
+      <button class="botonNav"><a href="#Unete">Únete</a></button>
+      <button class="botonNav"><a href="#Faq">FAQ</a></button>
+    </div>
+  
     <div class="Redes-Inicio">
 
       {config.socialNetworks.instagram && (
@@ -41,6 +40,14 @@ import Carousel from "./Carousel.astro";
           config.socialNetworks.linkedin
         } target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />
+        </a>
+      )}
+
+      {config.socialNetworks.github && (
+        <a class="socialNetwoks" href={
+          config.socialNetworks.github
+        } target="_blank" rel="noopener noreferrer">
+          <GitHubIcon />
         </a>
       )}
     </div>

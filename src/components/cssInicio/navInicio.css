@@ -2,6 +2,7 @@
     width: 145px;
     left: 0;
     position: absolute;
+    margin-left: 50px;
 }
 
 .menuInicio {
@@ -16,7 +17,7 @@
     height: 100px;
     width: 100%;
 
-    z-index: 1000;
+    z-index: 50;
 
     background-color: white;
 
@@ -24,9 +25,82 @@
         text-decoration: none;
         color: black;
 
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    & a:hover {
+        color: #035B98;
+    }
+
+    & .socialNetwoks {
+        font-size: 38px;
+    }
+
+    & .socialNetwoks:hover {
+        color: black;
     }
 }
+
+@media (max-width: 1030px) {
+    .menuInicio {
+        height: 70px;
+    }
+
+    .logoIEEE {
+        width: 100px;
+    }
+
+    & .menuInicio a {
+        font-size: 18px;
+    }
+
+    & .menuInicio .socialNetwoks {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 920px) {
+    .menuInicio {
+        height: 60px;
+    }
+
+    .logoIEEE {
+        width: 80px;
+    }
+
+    & .menuInicio a {
+        font-size: 16px;
+    }
+
+    & .menuInicio .socialNetwoks {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menuInicio {
+        height: 50px;
+    }
+
+    .logoIEEE {
+        width: 70px;
+    }
+
+    & .menuInicio a {
+        font-size: 14px;
+    }
+
+    & .menuInicio .socialNetwoks {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 700px) {
+   .navInicio{
+    display: none;
+   }
+}
+
 
 .menuInicio .botonNav {
     font-weight: bolder;
