@@ -1,58 +1,46 @@
 ---
 interface Props {
-	titulo: string;
+    titulo: string;
 }
-const { titulo } = Astro.props
+const { titulo } = Astro.props;
 ---
+
 <section>
-    <h1 class="titulo">{titulo}</h1>
-    <div class="underline"></div>
-    <br/>
+    <h1 class={"titulo"} id={titulo}>
+        {titulo}
+    </h1>
+    <br />
 </section>
 
 <style>
     .titulo {
-        color: #035B98;
-        font-size: 70px;	
-        font-family: "Cousine", monospace;
+        color: #035b98;
+        font-size: 70px;
         line-height: 1;
         text-align: left;
-        padding-top: 4rem;
-        padding-bottom: 1rem;	
+        padding-top: 1.2rem;
+        padding-bottom: 1rem;
         padding-right: 1rem;
         padding-left: 1rem;
-  
+        text-decoration: underline;
     }
 
-    @media screen and (max-width:1030px)
-    {
-        .titulo
-        {
+
+    @media screen and (max-width: 1030px) {
+        .titulo {
             font-size: 50px;
         }
     }
 
-
-    
-    .underline
-    {
-        margin-left: 2rem;
-        width: 150px;
-        float: left;
-        border: 10px solid #035B98;
-    }
-
-    @media screen and (max-width:800px)
-    {
-    .titulo
-        {
+    @media screen and (max-width: 800px) {
+        .titulo {
             text-align: left;
         }
-    .underline
-        {
-            float: left;
-            position: relative;
-            left: 5%;
+    }
+
+    @media screen and (max-width: 668px) {
+        .titulo {
+            font-size: 35px;
         }
     }
 </style>

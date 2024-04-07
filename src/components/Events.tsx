@@ -40,7 +40,7 @@ const buildStyle = ({ animation }: { animation?: string }) => {
 export default function App() {
   return (
     <>
-      <div className="container" id="Eventos">
+      <div className="container">
         <h2 className="events">
           <span className="span-events" data-content="Conferecias">
             Conferecias

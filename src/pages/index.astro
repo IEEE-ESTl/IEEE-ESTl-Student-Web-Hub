@@ -16,7 +16,7 @@ import Titulos from "../components/Titulos.astro";
 <Layout title="Welcome to StudentWebHub">
   <Header />
   <Inicio />
-  <Titulos titulo="Evéntos" />
+  <Titulos titulo="Eventos" />
 
   <h2>
     Nos esforzamos por ofrecer una amplia gama de actividades diseñadas para
@@ -25,7 +25,7 @@ import Titulos from "../components/Titulos.astro";
   </h2>
 
   <Events client:load />
-  <Titulos titulo="Próximo" />
+  <Titulos titulo="Próximamente" />
 
   <h2>
     ¡Prepárate para sumergirte en una serie emocionante de eventos que están a
@@ -35,7 +35,7 @@ import Titulos from "../components/Titulos.astro";
 
   <Soon client:load />
 
-  <div class="unete">
+  <div class="Únete">
     <Titulos titulo="Únete" />
 
     <h2>
@@ -64,9 +64,19 @@ import Titulos from "../components/Titulos.astro";
       font-size: 1.3rem;
       font-weight: 400;
       text-align: center;
-      padding: 2rem;
+      padding: 0px;
       text-align: center;
       line-height: 1.5;
+      padding-left: 20rem;
+      padding-right: 20rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 1669px) {
+      h2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
 
     @media (max-width: 768px) {

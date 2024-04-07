@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.5",
     "@astrojs/react": "^3.0.10",
+    "@fontsource/open-sauce-sans": "^5.0.7",
     "@types/react": "^18.2.59",
     "@types/react-dom": "^18.2.19",
     "astro": "^4.4.1",

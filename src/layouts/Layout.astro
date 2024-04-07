@@ -1,6 +1,9 @@
 ---
 import logo from "/public/SB-Logo.png";
 import config from "../../config.json";
+
+import "@fontsource/open-sauce-sans/400.css";
+import "@fontsource/open-sauce-sans/800.css";
 ---
 
 <!doctype html>
@@ -16,3 +19,9 @@ import config from "../../config.json";
     <slot />
   </body>
 </html>
+
+<style>
+  body {
+    font-family: "Open Sauce Sans", sans-serif;
+  }
+</style>
