@@ -11,7 +11,11 @@ type Card = {
   src: string;
 };
 
-const card: Card[] = [];
+const card: Card[] = [
+  {
+    src: "/public/SoonEvents/AIWeekend.jpeg",
+  },
+];
 
 export default function App() {
   return (
