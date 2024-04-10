@@ -7,13 +7,15 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 
 import comingSoon from "/public/Inicio/undraw_programming_re_kg9v.svg";
 
+import AIWeekend from "/public/SoonEvents/AIWeekend.jpeg";
+
 type Card = {
   src: string;
 };
 
 const card: Card[] = [
   {
-    src: "/public/SoonEvents/AIWeekend.jpeg",
+    src: AIWeekend.src,
   },
 ];
 
