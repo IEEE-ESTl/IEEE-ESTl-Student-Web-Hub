@@ -12,6 +12,9 @@ import InstagramIcon from "./icons/Instagram.astro";
 import LinkedInIcon from "./icons/LinkedIn.astro";
 
 import GitHubIcon from "./icons/GitHub.astro";
+
+import FacebookIcon from "./icons/Facebook.astro";
+
 ---
 
 <div class="menuInicio">
@@ -61,6 +64,19 @@ import GitHubIcon from "./icons/GitHub.astro";
           rel="noopener noreferrer"
         >
           <GitHubIcon />
+        </a>
+      )
+    }
+
+    {
+      config.socialNetworks.facebook && (
+        <a
+          class="socialNetwoks"
+          href={config.socialNetworks.facebook}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FacebookIcon />
         </a>
       )
     }
