@@ -2,6 +2,10 @@ import { EffectCards } from "swiper/modules";
 
 import Git from "../../public/Events/Git.jpeg";
 import WelcomeBack from "../../public/Events/WelcomeBack.jpeg";
+import PostgreSQL from "../../public/Events/PostgreSQL.jpeg";
+import CloudWeekend from "../../public/Events/CloudWeekend.jpeg";
+import TalentLand2024 from "../../public/Events/TalentLand2024.jpeg";
+
 
 type Card = {
   src: string;
@@ -10,6 +14,21 @@ type Card = {
 };
 
 const card: Card[] = [
+  {
+    src: TalentLand2024.src,
+    name: "Talent Land 2024",
+    description: "Talend World | Conferencia",
+  },
+  {
+    src: PostgreSQL.src,
+    name: "IEEE - ESTl Student Workshops",
+    description: "Taller: PostgreSQL desde Cero",
+  },
+  {
+    src: CloudWeekend.src,
+    name: "Cloud Weekend",
+    description: "",
+  },
   {
     src: Git.src,
     name: "IEEE - ESTl Student Workshops",
@@ -40,7 +59,7 @@ const buildStyle = ({ animation }: { animation?: string }) => {
 export default function App() {
   return (
     <>
-      <div className="container">
+      <div className="container ">
         <h2 className="events">
           <span className="span-events" data-content="Conferecias">
             Conferecias
@@ -71,7 +90,7 @@ export default function App() {
             <SwiperSlide key={index}>
               <h1 className="eventName">{Card.name}</h1>
               <p className="eventDescription">{Card.description}</p>
-              <img src={Card.src} alt={Card.name} />
+              <img src={Card.src} alt={Card.name} style={{ maxHeight: "270px" }} />
             </SwiperSlide>
           ))}
         </Swiper>
