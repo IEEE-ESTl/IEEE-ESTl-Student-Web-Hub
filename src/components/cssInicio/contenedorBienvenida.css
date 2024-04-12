@@ -25,7 +25,7 @@ h1 {
   width: 45%;
   padding: 35px;
   padding-left: 6vw;
-  color: #0371A4;
+  color: #0371a4;
   font-size: 3rem;
 }
 
@@ -41,7 +41,6 @@ h1 {
   color: black;
   font-size: 1.2rem;
 }
-
 
 @media (max-width: 1330px) {
   .textobienvenida {
@@ -71,7 +70,6 @@ h1 {
 }
 
 @media (max-width: 668px) {
-
   .textobienvenida {
     padding: 0px;
     padding-left: 4px;
@@ -80,9 +78,9 @@ h1 {
   }
 
   .textobienvenida p {
-    font-size: .8rem;
-    padding-left: 4px;
-    padding-right: 4px;
+    font-size: 0.8rem;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -129,12 +127,11 @@ h1 {
 }
 
 @media (max-width: 1030px) {
-
   .Contactar1,
   .Contactar2 {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 

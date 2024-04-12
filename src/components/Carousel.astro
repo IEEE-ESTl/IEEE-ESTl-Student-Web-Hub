@@ -5,13 +5,18 @@ import "./cssInicio/navInicio.css";
 import "./cssInicio/variables.css";
 
 import branchLogo from "/public/Inicio/ieeelogo1.png";
-
 import ieeeLogo from "/public/Inicio/ieeelogo2.png";
 import csocietyLogo from "/public/Inicio/csociety_logo.png";
 import uaehLogo from "/public/Inicio/uaeh_logo_color.png";
 import estlLogo from "/public/Inicio/logoESTL.png";
 
-const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
+const Logos = [
+  { src: branchLogo, alt: 'Branch Logo' },
+  { src: ieeeLogo, alt: 'IEEE Logo' },
+  { src: csocietyLogo, alt: 'Computer Society Logo' },
+  { src: uaehLogo, alt: 'UAEH Logo' },
+  { src: estlLogo, alt: 'ESTL Logo' },
+];
 ---
 
 <div>
@@ -20,11 +25,12 @@ const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
             <div>
                 <ul>
                     {
-                        Logos.map((logo, index) => (
-                            <li>
-                                <img src={logo.src} />
-                            </li>
+                       Logos.map((logo, index) => (
+                        <li>
+                            <img src={logo.src.src} alt={logo.alt} />
+                        </li>
                         ))
+                        
                     }
                 </ul>
             </div>
@@ -33,7 +39,7 @@ const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
                     {
                         Logos.map((logo, index) => (
                             <li>
-                                <img src={logo.src} />
+                                <img src={logo.src.src} alt={logo.alt}/>
                             </li>
                         ))
                     }
@@ -67,6 +73,7 @@ const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
         animation-play-state: paused;
     }
 
+
     div {
         width: 100%;
     }
@@ -88,7 +95,7 @@ const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
 
     @media (max-width: 1030px) {
         article {
-            animation: carouselMove 30s linear infinite;
+            animation: carouselMove 30s ease-in-out infinite;
             margin-top: 50px;
 
             & img {
@@ -98,11 +105,8 @@ const Logos = [branchLogo, ieeeLogo, csocietyLogo, uaehLogo, estlLogo];
     }
 
     @keyframes carouselMove {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
     }
 </style>
