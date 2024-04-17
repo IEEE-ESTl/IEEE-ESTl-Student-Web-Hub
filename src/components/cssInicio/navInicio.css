@@ -1,165 +1,194 @@
 .logoIEEE {
-    width: 145px;
-    left: 0;
-    position: absolute;
-    margin-left: 50px;
+  width: 205px;
+  left: 0;
+  position: absolute;
+  margin-left: 1vw;
+  margin-top: 1vw;
 }
 
 .menuInicio {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    position: sticky;
-    top: 0;
-    height: 100px;
-    width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 100%;
 
-    z-index: 50;
+  z-index: 50;
 
-    background-color: white;
+  background-color: white;
 
-    & a {
-        text-decoration: none;
-        color: black;
+  & a {
+    text-decoration: none;
+    color: black;
 
-        font-size: 22px;
-    }
+    font-size: 22px;
+  }
 
-    & a:hover {
-        color: #035B98;
-    }
+  & a:hover {
+    color: #035b98;
+  }
 
-    & .socialNetwoks {
-        font-size: 38px;
-    }
+  & .socialNetwoks {
+    font-size: 38px;
+  }
 
-    & .socialNetwoks:hover {
-        color: black;
-    }
+  & .socialNetwoks:hover {
+    color: black;
+  }
 }
 
 @media (max-width: 1030px) {
-    .menuInicio {
-        height: 70px;
-    }
+  .menuInicio {
+    height: 70px;
+  }
 
-    .logoIEEE {
-        width: 100px;
-    }
+  .logoIEEE {
+    width: 89px;
+  }
 
-    & .menuInicio a {
-        font-size: 18px;
-    }
+  & .menuInicio a {
+    font-size: 18px;
+  }
 
-    & .menuInicio .socialNetwoks {
-        font-size: 30px;
-    }
+  & .menuInicio .socialNetwoks {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 920px) {
-    .menuInicio {
-        height: 60px;
-    }
+  .menuInicio {
+    height: 60px;
+  }
 
-    .logoIEEE {
-        width: 80px;
-    }
+  .logoIEEE {
+    width: 89px;
+  }
 
-    & .menuInicio a {
-        font-size: 16px;
-    }
+  & .menuInicio a {
+    font-size: 16px;
+  }
 
-    & .menuInicio .socialNetwoks {
-        font-size: 26px;
-    }
+  & .menuInicio .socialNetwoks {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 800px) {
-    .menuInicio {
-        height: 50px;
-    }
+  .menuInicio {
+    height: 50px;
+  }
 
-    .logoIEEE {
-        width: 70px;
-    }
+  .logoIEEE {
+    width: 89px;
+  }
 
-    & .menuInicio a {
-        font-size: 14px;
-    }
+  & .menuInicio a {
+    font-size: 14px;
+  }
 
-    & .menuInicio .socialNetwoks {
-        font-size: 22px;
-    }
+  & .menuInicio .socialNetwoks {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 700px) {
-   .navInicio{
+  .navInicio {
     display: none;
-   }
+  }
 }
 
-
 .menuInicio .botonNav {
-    font-weight: bolder;
-    letter-spacing: 0.5px;
-    margin-right: 10px;
-    padding: 5px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-family: "Open Sauce Sans";
+}
+
+.menuInicio .botonNav a {
+  padding: 50px;
+}
+
+@media (max-width: 1030px) {
+  .menuInicio .botonNav a {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 920px) {
+  .menuInicio .botonNav a {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menuInicio .botonNav a {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menuInicio .botonNav a {
+    padding: 8px;
+  }
 }
 
 .menuInicio .botonNav:hover {
-    transform: translateY(-7px);
+  transform: translateY(-7px);
+  color: #035b98;
 }
 
 .Redes-Inicio {
-    position: absolute;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  margin-right: 50px;
+
+  & a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 30px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 0;
-    margin-right: 50px;
 
-    & a {
-        margin-right: 10px;
-        text-decoration: none;
-        font-size: 30px;
+    color: black;
+    transition: transform 0.2s ease;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        color: black;
-        transition: transform 0.2s ease;
-
-        &:hover {
-            transform: translateY(-7px);
-        }
+    &:hover {
+      transform: translateY(-7px);
     }
+  }
 }
 
-
 .irInicio {
-    font-weight: bolder;
-    letter-spacing: 0.7px;
-    margin-right: 6px;
-    padding: 5px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    border: 2px solid black;
-    border-radius: 4px;
+  font-weight: bolder;
+  letter-spacing: 0.7px;
+  margin-right: 6px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 2px solid black;
+  border-radius: 4px;
 }
 
 .irInicio:hover {
-    transform: translateY(-7px);
-    transition: transform 0.2s ease;
+  transform: translateY(-7px);
+  transition: transform 0.2s ease;
 }
-

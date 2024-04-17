@@ -24,13 +24,19 @@ h1 {
 .textobienvenida {
   width: 45%;
   padding: 35px;
-  padding-left: 6vw;
+  padding-left: 3vw;
   color: #0371a4;
   font-size: 3rem;
+  font-family: "Open Sauce ";
+}
+
+.textobienvenida h1 {
+  padding-left: 1vw;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 
 .textobienvenida p {
-  padding-left: 3px;
   text-align: justify;
   color: black;
   margin-bottom: 10px;
@@ -40,6 +46,7 @@ h1 {
   letter-spacing: 0.5px;
   color: black;
   font-size: 1.2rem;
+  padding-left: 3vw;
 }
 
 @media (max-width: 1330px) {
@@ -49,7 +56,6 @@ h1 {
   }
 
   .textobienvenida p {
-    padding-left: 3px;
     text-align: justify;
     color: black;
     margin-bottom: 10px;
@@ -59,7 +65,7 @@ h1 {
     letter-spacing: 0.5px;
     color: black;
     font-size: 1rem;
-    padding-right: 50px;
+    padding-right: 3vw;
   }
 }
 
@@ -72,15 +78,13 @@ h1 {
 @media (max-width: 668px) {
   .textobienvenida {
     padding: 0px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-right: 3vw;
     font-size: 1.8rem;
   }
 
   .textobienvenida p {
     font-size: 0.8rem;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 3vw;
   }
 }
 
