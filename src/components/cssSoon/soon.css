@@ -1,8 +1,13 @@
+.swiper {
+  margin-top: 20px !important;
+}
+
 .swiper.mySwiper1 {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
   height: 600px;
+
 }
 
 .swiper.mySwiper1 .swiper-slide {

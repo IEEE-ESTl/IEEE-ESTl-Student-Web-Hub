@@ -1,7 +1,24 @@
 :root {
   --fondo: #ffffff;
-  --azulfuerte: #0371A4;
-  --azul: #009EFF;
+  --azulfuerte: #0371a4;
+  --azul: #009eff;
   --azuldebil: #f0f9ff;
   --backdrop-filter: contrast(105%) brightness(110%) blur(4.5rem);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f9ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0371a4;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
 }

@@ -7,26 +7,30 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 
 import comingSoon from "/public/Inicio/undraw_programming_re_kg9v.svg";
 
+import AIWeekend from "/public/SoonEvents/AIWeekend.jpeg";
+
 type Card = {
   src: string;
+  alt: string;
 };
 
-const card: Card[] = [];
+const card: Card[] = [
+  {
+    src: AIWeekend.src,
+    alt: "IEEEAIWeekend",
+  },
+];
 
 export default function App() {
   return (
     <>
-
       {" "}
       {card.length === 0 && (
         <div style={{ textAlign: "center" }}>
           <img src={comingSoon.src} style={{ width: "300px" }} />
-          <h1
-            style={{ color: "#035B98" }}
-          >Proximamente...</h1>
+          <h1 style={{ color: "#035B98" }}>Proximamente...</h1>
         </div>
       )}
-
       {card.length !== 0 && (
         <Swiper
           effect={"coverflow"}
@@ -46,12 +50,11 @@ export default function App() {
         >
           {card.map((Card, index) => (
             <SwiperSlide key={index}>
-              <img src={Card.src} />
+              <img src={Card.src} alt={Card.alt} />
             </SwiperSlide>
           ))}
         </Swiper>
       )}
-
     </>
   );
 }
