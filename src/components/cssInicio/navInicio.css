@@ -1,9 +1,11 @@
 .logoIEEE {
-  width: 205px;
   left: 0;
+  height: 100%;
+  width: 200px;
   position: absolute;
   margin-left: 1vw;
   margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .menuInicio {
@@ -116,7 +118,7 @@
 }
 
 .menuInicio .botonNav a {
-  padding: 50px;
+  padding: 20px;
 }
 
 @media (max-width: 1030px) {
@@ -150,12 +152,11 @@
 
 .Redes-Inicio {
   position: absolute;
-
   display: flex;
   align-items: center;
   justify-content: center;
   right: 0;
-  margin-right: 50px;
+  margin-right: 1vw;
 
   & a {
     margin-right: 10px;

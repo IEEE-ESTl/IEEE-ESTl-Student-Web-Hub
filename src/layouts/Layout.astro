@@ -4,6 +4,8 @@ import config from "../../config.json";
 
 import "@fontsource/open-sauce-sans/400.css";
 import "@fontsource/open-sauce-sans/800.css";
+
+import Header from "@components/Header.astro";
 ---
 
 <!doctype html>
@@ -16,6 +18,7 @@ import "@fontsource/open-sauce-sans/800.css";
     <title>{config.branchName}</title>
   </head>
   <body>
+    <Header />  
     <slot />
   </body>
 </html>
