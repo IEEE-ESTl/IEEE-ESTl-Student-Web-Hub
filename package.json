@@ -24,6 +24,7 @@
     "@types/react": "^18.2.59",
     "@types/react-dom": "^18.2.19",
     "astro": "^4.4.1",
+    "astro-seo": "^0.8.3",
     "dependence": "^1.1.0",
     "framer-motion": "^11.1.7",
     "react": "^18.2.0",

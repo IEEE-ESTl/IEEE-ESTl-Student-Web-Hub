@@ -1,9 +1,9 @@
 <h1 align="center"> IEEE-ESTl Student Web Hub </h1>
 <p align="center">
-  <img width="400px" src="https://github.com/IEEE-ESTl/IEEE-ESTl-Student-Web-Hub/blob/main/public/SB-Logo.png" alt="IEEE - ESTl Student Branch"/>
+  <img width="400px" src="https://github.com/IEEE-ESTl/blob/main/public/SB-Logo.png" alt="IEEE - ESTl Student Branch"/>
 </p>
 
-[![Deploy to GitHub Pages](https://github.com/IEEE-ESTl/IEEE-ESTl-Student-Web-Hub/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/IEEE-ESTl/IEEE-ESTl-Student-Web-Hub/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/IEEE-ESTl/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/IEEE-ESTl/actions/workflows/deploy.yml)
 
 ### La Rama Estudiantil IEEE-ESTl es una comunidad de estudiantes apasionados por la programación, la innovación y el conocimiento de nuevas tecnologías. Como miembros de la rama, nos vimos en la tarea de crear la página web “IEEE-ESTL Student Web Hub”.
 
@@ -37,7 +37,7 @@
 <h2 align="center">Instalación</h2>
 <p>Para hacer uso de este proyecto de manera local es necesario descargar el código desde el apartado “code” o si lo desea puede ejecutar los siguientes comandos en la terminal de visual studio code.</p>
 
-- `git clone https://github.com/IEEE-ESTl/IEEE-ESTl-Student-Web-Hub.git`  para clonar el proyecto
+- `git clone https://github.com/IEEE-ESTl.git`  para clonar el proyecto
 
 - `pnpm install` para instalar todas las dependencias del proyecto
 - `pnpm run dev` para abrir una previsualización del proyecto de forma local

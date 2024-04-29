@@ -1,11 +1,12 @@
 ---
 import logo from "/public/SB-Logo.png";
 import config from "../../config.json";
-
 import "@fontsource/open-sauce-sans/400.css";
 import "@fontsource/open-sauce-sans/800.css";
-
 import Header from "@components/Header.astro";
+import { SEO } from "astro-seo";
+
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -15,16 +16,26 @@ import Header from "@components/Header.astro";
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href={logo.src} />
-    <title>{config.branchName}</title>
+
+    <SEO
+      title={title}
+      description={description}
+      openGraph={{
+        basic: {
+          title: title,
+          type: "website",
+          image: logo.src,
+        },
+      }}
+    />
   </head>
   <body>
-    <Header />  
+    <Header />
     <slot />
+    <style>
+      body {
+        font-family: "Open Sauce Sans", sans-serif;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  body {
-    font-family: "Open Sauce Sans", sans-serif;
-  }
-</style>
