@@ -6,6 +6,9 @@ import ErickMedelGalindo from "../../public/Members/ErickMedelGalindo.webp";
 import MarioLozano from "../../public/Members/MarioLozano.webp";
 import EricJaredVilledaReyes from "../../public/Members/EricJaredVilledaReyes.webp";
 import Johan from "../../public/Members/Johan.webp";
+import Mauricio from "../../public/Members/Mauricio.webp";
+import Valeri from "../../public/Members/Valeri.webp";
+import Abdiel from "../../public/Members/Abdiel.webp";
 
 let badges = {
     Presidente: {
@@ -47,6 +50,22 @@ let badges = {
         color: "bg-white",
         iconColor: "text-black",
     },
+    Diseñador: {
+        name: "Diseñador",
+        description:
+            "¡Ha sido el encargado de diseñar los gráficos de la comunidad!",
+        icon: "bi:brush",
+        color: "bg-white",
+        iconColor: "text-black",
+    },
+    Marketing: {
+        name: "Marketing",
+        description:
+            "¡Ha sido el encargado de promocionar la comunidad y sus actividades!",
+        icon: "bi:chat-left-text",
+        color: "bg-white",
+        iconColor: "text-black",
+    },
 };
 
 const members = [
@@ -57,7 +76,7 @@ const members = [
         badges: [badges.Presidente, badges.Desarrollador],
     },
     {
-        name: "Mario Lozano",
+        name: "Mario Lozano Marquez",
         date: "2024",
         image: MarioLozano.src,
         badges: [badges.WebMaster, badges.Desarrollador],
@@ -69,10 +88,28 @@ const members = [
         badges: [badges.Secretario, badges.Desarrollador],
     },
     {
-        name: "Johan Isay",
+        name: "Johan Isay Guerrero González",
         date: "2023",
         image: Johan.src,
         badges: [badges.Tesorero, badges.Desarrollador],
+    },
+    {
+        name: "Jorge Mauricio García Monroy",
+        date: "2024",
+        image: Mauricio.src,
+        badges: [badges.Diseñador],
+    },
+    {
+        name: "Isai Valeri Marmolejo Corona",
+        date: "2024",
+        image: Valeri.src,
+        badges: [badges.Marketing],
+    },
+    {
+        name: "Abdiel Avila Neri",
+        date: "2024",
+        image: Abdiel.src,
+        badges: [badges.Diseñador],
     },
 ];
 ---
