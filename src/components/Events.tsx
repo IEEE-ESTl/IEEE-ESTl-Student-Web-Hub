@@ -88,7 +88,7 @@ export default function App() {
         >
           {card.map((Card, index) => (
             <SwiperSlide key={index}>
-              <h1 className="eventName">{Card.name}</h1>
+              <h1 className="eventName font-bold">{Card.name}</h1>
               <p className="eventDescription">{Card.description}</p>
               <img src={Card.src} alt={Card.name} style={{ maxHeight: "270px" }} />
             </SwiperSlide>
