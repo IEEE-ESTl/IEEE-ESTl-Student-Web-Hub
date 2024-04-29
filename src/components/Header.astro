@@ -14,17 +14,42 @@ import LinkedInIcon from "./icons/LinkedIn.astro";
 import GitHubIcon from "./icons/GitHub.astro";
 
 import FacebookIcon from "./icons/Facebook.astro";
+
+const { pathname } = Astro.url;
+
+const isMembersPage = pathname.includes("members");
 ---
 
 <div class="menuInicio">
-    <img src={branchLogo.src} class="logoIEEE" alt="Logo de IEEE" onclick="window.location.href='/IEEE-ESTl-Student-Web-Hub/'"/>
+  <img
+    src={branchLogo.src}
+    class="logoIEEE"
+    alt="Logo de IEEE"
+    onclick="window.location.href='/IEEE-ESTl-Student-Web-Hub/'"
+  />
 
   <div class="navInicio">
-    <button class="botonNav"><a href="#Inicio">Inicio</a></button>
-    <button class="botonNav"><a href="#Eventos">Eventos</a></button>
-    <button class="botonNav"><a href="#Próximamente">Próximamente</a></button>
-    <button class="botonNav"><a href="#Únete">Únete</a></button>
-    <button class="botonNav"><a href="#FAQ">FAQ</a></button>
+    {
+      !isMembersPage && (
+        <>
+          <button class="botonNav">
+            <a href="#Inicio">Inicio</a>
+          </button>
+          <button class="botonNav">
+            <a href="#Eventos">Eventos</a>
+          </button>
+          <button class="botonNav">
+            <a href="#Próximamente">Próximamente</a>
+          </button>
+          <button class="botonNav">
+            <a href="#Únete">Únete</a>
+          </button>
+          <button class="botonNav">
+            <a href="#FAQ">FAQ</a>
+          </button>
+        </>
+      )
+    }
   </div>
 
   <div class="Redes-Inicio">
