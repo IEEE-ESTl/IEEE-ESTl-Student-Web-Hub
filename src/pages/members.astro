@@ -1,0 +1,134 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MemberCard from "../components/Members/Card.tsx";
+
+import ErickMedelGalindo from "../../public/Members/ErickMedelGalindo.webp";
+import MarioLozano from "../../public/Members/MarioLozano.webp";
+import EricJaredVilledaReyes from "../../public/Members/EricJaredVilledaReyes.webp";
+import Johan from "../../public/Members/Johan.webp";
+import Mauricio from "../../public/Members/Mauricio.webp";
+import Valeri from "../../public/Members/Valeri.webp";
+import Abdiel from "../../public/Members/Abdiel.webp";
+import Mariano from "../../public/Members/Mariano.webp";
+
+let badges = {
+    Presidente: {
+        name: "Presidente",
+        description: "¡Ha sido presidente de la nuestra comunidad, IEEE ESTl!",
+        icon: "academicons:ieee",
+        color: "bg-white",
+        iconColor: "text-black",
+    },
+    WebMaster: {
+        name: "Web Master",
+        description:
+            "¡Ha sido el encargado de mantener nuestras aplicaciones y desarrollos impulsados por la comunidad!",
+        icon: "pepicons-pop:code",
+        color: "bg-white",
+        iconColor: "text-black",
+    },
+    Desarrollador: {
+        name: "Desarrollador",
+        description:
+            "¡Ha contribuido en proyectos de código abierto de la comunidad!",
+        icon: "akar-icons:github-fill",
+        color: "bg-black",
+        iconColor: "text-white",
+    },
+    Tesorero: {
+        name: "Tesorero",
+        description:
+            "¡Ha sido el encargado de manejar los fondos de la comunidad!",
+        icon: "game-icons:cash",
+        color: "bg-white",
+        iconColor: "text-black",
+    },
+    Secretario: {
+        name: "Secretario",
+        description:
+            "¡Ha sido el encargado de llevar el registro de las actividades de la comunidad!",
+        icon: "game-icons:bookshelf",
+        color: "bg-white",
+        iconColor: "text-black",
+    },
+    Diseñador: {
+        name: "Diseñador",
+        description:
+            "¡Ha sido el encargado de diseñar los gráficos de la comunidad!",
+        icon: "bi:brush",
+        color: "bg-white",
+        iconColor: "text-black",
+    },
+    Marketing: {
+        name: "Marketing",
+        description:
+            "¡Ha sido el encargado de promocionar la comunidad y sus actividades!",
+        icon: "bi:chat-left-text",
+        color: "bg-white",
+        iconColor: "text-black",
+    },
+};
+
+const members = [
+    {
+        name: "Erick Medel Galindo",
+        date: "2023",
+        image: ErickMedelGalindo.src,
+        badges: [badges.Presidente, badges.Desarrollador],
+    },
+    {
+        name: "Mario Lozano Marquez",
+        date: "2024",
+        image: MarioLozano.src,
+        badges: [badges.WebMaster, badges.Desarrollador],
+    },
+    {
+        name: "Eric Jared Villeda Reyes",
+        date: "2023",
+        image: EricJaredVilledaReyes.src,
+        badges: [badges.Secretario, badges.Desarrollador],
+    },
+    {
+        name: "Johan Isay Guerrero González",
+        date: "2023",
+        image: Johan.src,
+        badges: [badges.Tesorero, badges.Desarrollador],
+    },
+    {
+        name: "Jorge Mauricio García Monroy",
+        date: "2024",
+        image: Mauricio.src,
+        badges: [badges.Diseñador],
+    },
+    {
+        name: "Isai Valeri Marmolejo Corona",
+        date: "2024",
+        image: Valeri.src,
+        badges: [badges.Marketing],
+    },
+    {
+        name: "Abdiel Avila Neri",
+        date: "2024",
+        image: Abdiel.src,
+        badges: [badges.Diseñador],
+    },
+    {
+        name: "Mariano Ordaz Monterrubio",
+        date: "2024",
+        image: Mariano.src,
+        badges: [badges.Tesorero],
+    },
+];
+---
+
+<Layout title="IEEE - ESTl Branch Members">
+    <h1
+        class="text-5xl font-bold text-center mb-6 max-[1000px]:text-3xl max-[600px]:text-2xl"
+    >
+        IEEE - ESTl Miembros de la Rama
+    </h1>
+
+    <div class="flex flex-wrap justify-center gap-4">
+        {members.map((member) => <MemberCard member={member} client:only />)}
+    </div>
+</Layout>

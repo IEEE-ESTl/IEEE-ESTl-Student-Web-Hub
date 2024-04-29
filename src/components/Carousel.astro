@@ -1,9 +1,4 @@
 ---
-import "./cssInicio/contenedorBienvenida.css";
-import "./cssInicio/fondo.css";
-import "./cssInicio/navInicio.css";
-import "./cssInicio/variables.css";
-
 import branchLogo from "/public/Inicio/ieeelogo1.png";
 import ieeeLogo from "/public/Inicio/ieeelogo2.png";
 import csocietyLogo from "/public/Inicio/csociety_logo.png";
@@ -11,102 +6,21 @@ import uaehLogo from "/public/Inicio/uaeh_logo_color.png";
 import estlLogo from "/public/Inicio/logoESTL.png";
 
 const Logos = [
-  { src: branchLogo, alt: 'Branch Logo' },
-  { src: ieeeLogo, alt: 'IEEE Logo' },
-  { src: csocietyLogo, alt: 'Computer Society Logo' },
-  { src: uaehLogo, alt: 'UAEH Logo' },
-  { src: estlLogo, alt: 'ESTL Logo' },
+    { src: ieeeLogo.src, alt: "IEEE Logo" },
+    { src: csocietyLogo.src, alt: "Computer Society Logo" },
+    { src: uaehLogo.src, alt: "UAEH Logo" },
+    { src: estlLogo.src, alt: "ESTL Logo" },
 ];
 ---
 
-<div>
-    <section>
-        <article>
-            <div>
-                <ul>
-                    {
-                       Logos.map((logo, index) => (
-                        <li>
-                            <img src={logo.src.src} alt={logo.alt} />
-                        </li>
-                        ))
-                        
-                    }
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    {
-                        Logos.map((logo, index) => (
-                            <li>
-                                <img src={logo.src.src} alt={logo.alt}/>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </div>
-        </article>
-    </section>
+<div class="w-screen bg-white flex flex-row justify-around items-center">
+    {
+        Logos.map(({ src, alt }) => (
+            <img
+                src={src}
+                alt={alt}
+                class="w-[300px] h-[300px] object-contain max-[1300px]:w-[200px] max-[1300px]:h-[200px] max-[800px]:w-[150px] max-[800px]:h-[150px] max-[500px]:w-[90px] max-[500px]:h-[90px]"
+            />
+        ))
+    }
 </div>
-
-<style>
-    img {
-        display: block;
-        width: 100%;
-    }
-
-    section {
-        width: 100%;
-        overflow: hidden;
-        margin-bottom: 100px;
-    }
-
-    article {
-        display: flex;
-        width: 200%;
-        margin-top: 100px;
-        animation: carouselMove 50s linear infinite;
-    }
-
-    article.paused {
-        -webkit-animation-play-state: paused;
-        animation-play-state: paused;
-    }
-
-
-    div {
-        width: 100%;
-    }
-
-    ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-    }
-
-    li {
-        width: 100%;
-        padding-left: 50px;
-    }
-
-    img {
-        width: 280px;
-    }
-
-    @media (max-width: 1030px) {
-        article {
-            animation: carouselMove 30s ease-in-out infinite;
-            margin-top: 50px;
-
-            & img {
-                width: 200px;
-            }
-        }
-    }
-
-    @keyframes carouselMove {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(-50%); }
-        100% { transform: translateX(0); }
-    }
-</style>

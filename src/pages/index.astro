@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Events from "@components/Events";
-import Header from "@components/Header.astro";
 import Unete from "../components/Unete.astro";
 import Soon from "../components/Soon";
 import "../components/cssInicio/variables.css";
@@ -14,7 +13,6 @@ import Titulos from "../components/Titulos.astro";
 ---
 
 <Layout title="Welcome to StudentWebHub">
-  <Header />
   <Inicio />
   <Titulos titulo="Eventos" />
 
@@ -86,10 +84,7 @@ import Titulos from "../components/Titulos.astro";
     }
 
     @media (max-width: 1155px) {
-      .faq {
-        display: none;
-      }
-
+      
       .unete {
         margin-bottom: 2rem;
       }

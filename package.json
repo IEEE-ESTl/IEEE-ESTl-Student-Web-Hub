@@ -12,14 +12,24 @@
   "dependencies": {
     "@astrojs/check": "^0.5.5",
     "@astrojs/react": "^3.0.10",
+    "@astrojs/tailwind": "^5.1.0",
     "@fontsource/open-sauce-sans": "^5.0.7",
+    "@iconify/react": "^4.1.1",
+    "@nextui-org/card": "^2.0.27",
+    "@nextui-org/image": "^2.0.27",
+    "@nextui-org/react": "^2.3.5",
+    "@nextui-org/system": "^2.1.2",
+    "@nextui-org/theme": "^2.2.2",
+    "@nextui-org/tooltip": "^2.0.33",
     "@types/react": "^18.2.59",
     "@types/react-dom": "^18.2.19",
     "astro": "^4.4.1",
     "dependence": "^1.1.0",
+    "framer-motion": "^11.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swiper": "^11.0.6",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.3.3"
   }
 }
