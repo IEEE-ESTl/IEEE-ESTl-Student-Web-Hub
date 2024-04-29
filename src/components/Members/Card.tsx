@@ -54,16 +54,10 @@ const MemberCard = ({ member }: { member: Member }) => {
                 <CardFooter className="w-72 absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
                     <div className="flex flex-col gap-2 p-4 w-full">
                         <div className="flex flex-grow gap-2 items-center">
-                            <Image
-                                alt="Breathing app icon"
-                                className="rounded-full w-10 h-10"
-                                src={member.image}
-                            />
                             <div className="flex flex-col">
                                 <h3 className="text-lg text-white">{member.name}</h3>
                                 <p className="text-tiny text-white/60">Miembro desde {member.date}</p>
                             </div>
-
                         </div>
                         <div className="flex gap-2 justify-center">
 
