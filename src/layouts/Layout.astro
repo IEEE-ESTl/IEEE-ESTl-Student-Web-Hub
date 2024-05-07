@@ -1,6 +1,5 @@
 ---
 import logo from "/public/SB-Logo.png";
-import config from "../../config.json";
 import "@fontsource/open-sauce-sans/400.css";
 import "@fontsource/open-sauce-sans/800.css";
 import Header from "@components/Header.astro";
@@ -24,8 +23,20 @@ const { title, description } = Astro.props;
         basic: {
           title: title,
           type: "website",
-          image: logo.src,
+          image: "https://ieee-estl.com/SB-Logo.png",
         },
+      }}
+      extend={{
+        meta: [
+          {
+            name: "twitter:image",
+            content: "https://ieee-estl.com/SB-Logo.png",
+          },
+          {
+            name: "twitter:title",
+            content: title,
+          },
+        ],
       }}
     />
   </head>

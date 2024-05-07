@@ -1,9 +1,9 @@
-<h1 align="center"> IEEE-ESTl Student Web Hub </h1>
 <p align="center">
-  <img width="400px" src="https://github.com/IEEE-ESTl/blob/main/public/SB-Logo.png" alt="IEEE - ESTl Student Branch"/>
+  <img width="400px" src="public/SB-Logo.png" alt="IEEE - ESTl Student Branch"/>
 </p>
 
-[![Deploy to GitHub Pages](https://github.com/IEEE-ESTl/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/IEEE-ESTl/actions/workflows/deploy.yml)
+<h1 align="center"> IEEE-ESTl Student Web Hub </h1>
+
 
 ### La Rama Estudiantil IEEE-ESTl es una comunidad de estudiantes apasionados por la programación, la innovación y el conocimiento de nuevas tecnologías. Como miembros de la rama, nos vimos en la tarea de crear la página web “IEEE-ESTL Student Web Hub”.
 
