@@ -23,7 +23,7 @@ const images = [
     {
         id: 4,
         img: image_d,
-        alt: 'Escuela Superior de Tlahuelilpan'
+        alt: 'Escuela Superior de Tlahuelilpan',
     },
 ];
 
@@ -35,7 +35,7 @@ interface CardProps {
 
 const Card = ({ img, alt }: CardProps) => {
     return (
-        <img src={img} alt={alt} className="lg:w-[50%] lg:h-[50%] w-[30%] h-[30%] lg:mx-6 mx-3"/>
+        <img src={img} alt={alt} className={`lg:w-[50%] lg:h-[50%] w-72 lg:mx-6 mx-4"`}/>
     )
 };
 
