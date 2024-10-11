@@ -92,7 +92,7 @@ export const Unete: React.FC = () => {
       </div>
       <CardGrid/>
       <div className='flex flex-col items-center'>
-        <JoinForm text='UNIRSE' disable={disabled} className={`${disabled === true ? 'bg-[#c4cdd1] text-[#9ca9b5] ' : 'bg-[#0371a4] cursor-pointer text-white transition-all duration-300 hover:translate-y-2 hover:bg-[#0f4159]'} px-12 py-6 rounded-full text-xl font-montserrat font-bold `}/>
+        <JoinForm text='UNIRSE' disable={disabled} className={`${disabled ? 'bg-[#c4cdd1] text-[#9ca9b5] ' : 'bg-[#0371a4] cursor-pointer text-white transition-all duration-300 hover:translate-y-2 hover:bg-[#0f4159]'} px-12 py-6 rounded-full text-xl font-montserrat font-bold `}/>
       </div>
     </section>
   )

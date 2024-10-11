@@ -11,25 +11,26 @@ import Jorge from '@/assets/members/jorge_monroy.webp';
 import Abdiel from '@/assets/members/abdiel.webp';
 import Mariano from '@/assets/members/mariano.webp';
 import Arturo from '@/assets/members/arturo_monroy.webp';
+import Jocelyn from '@/assets/members/jocelyn.webp';
 
 const badges = {
     Fundador: {
         name: "Fundador",
-        description: "¡Ha sido el fundador de la iniciativa IEEE ESTl!",
+        description: "¡Ha sido el miembro fundador de la iniciativa IEEE ESTl!",
         icon: "academicons:ieee",
         color: "bg-gradient-to-r from-amber-300 to-orange-400",
         iconColor: "text-white",
     },
     Presidente: {
         name: "Presidente",
-        description: "¡Ha sido presidente de la nuestra comunidad, IEEE ESTl!",
+        description: "¡Ha sido presidente de nuestra comunidad, IEEE ESTl!",
         icon: "academicons:ieee",
         color: "bg-white",
         iconColor: "text-black",
     },
     VicePresidente: {
         name: "Vicepresidente",
-        description: "¡Ha sido vicepresidente de la nuestra comunidad, IEEE ESTl!",
+        description: "¡Ha sido vicepresidente de nuestra comunidad, IEEE ESTl!",
         icon: "academicons:ieee",
         color: "bg-white",
         iconColor: "text-black"
@@ -98,16 +99,16 @@ const members = [
         badges: [badges.Presidente, badges.Desarrollador],
     },
     {
-        name: "Mario Lozano Marquez",
-        date: "2024",
-        image: MarioLozano,
-        badges: [badges.VicePresidente, badges.Desarrollador],
-    },
-    {
         name: "Eric Jared Villeda Reyes",
         date: "2023",
         image: JaredVilleda,
         badges: [badges.Secretario, badges.Desarrollador],
+    },
+    {
+        name: "Mario Lozano Marquez",
+        date: "2024",
+        image: MarioLozano,
+        badges: [badges.VicePresidente, badges.Desarrollador],
     },
     {
         name: "Paulo de Jesús Mantilla Hernández",
@@ -122,12 +123,7 @@ const members = [
         badges: [badges.WebMaster, badges.Desarrollador],
     },
 
-    {
-        name: "Jorge Mauricio García Monroy",
-        date: "2024",
-        image: Jorge,
-        badges: [badges.Diseñador],
-    },
+
     {
         name: "Isai Valeri Marmolejo Corona",
         date: "2024",
@@ -138,6 +134,18 @@ const members = [
         name: "Abdiel Avila Neri",
         date: "2024",
         image: Abdiel,
+        badges: [badges.Diseñador],
+    },
+    {
+        name: "Jorge Mauricio García Monroy",
+        date: "2024",
+        image: Jorge,
+        badges: [badges.Diseñador],
+    },
+    {
+        name: "Jocelyn García García",
+        date: "2024",
+        image: Jocelyn,
         badges: [badges.Diseñador],
     },
     {
